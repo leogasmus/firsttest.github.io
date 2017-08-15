@@ -1,0 +1,347 @@
+@import "fonts";
+*{
+	margin: 0;
+	padding: 0;
+}
+
+.red{
+	color: #fa5c65;
+}
+
+.wr{
+	height: 100%;
+	max-width: 940px;
+	margin: 0 auto;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+}
+
+section#top{
+	position: relative;
+	height: 100vh;
+	background: no-repeat;
+	background-position: center 0;
+	-webkit-background-size: cover;
+	background-size: cover;
+	background-attachment: fixed;
+}
+header{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-basis: 100%;
+	justify-content: space-between;
+	align-self: flex-start;
+}
+.logo{
+	display: block;
+	width: 140px;
+	height: 74px;
+	background-image: url(../img/Logo.png);
+	background-repeat: no-repeat;
+
+}
+nav ul{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	margin-top: 25px;
+}
+
+nav ul li{
+	margin-left: 30px;
+}
+nav ul li a{
+	color: #263742;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 14px;
+	font-weight: 400;
+	text-transform: uppercase;
+	text-decoration: none;
+}
+nav ul li a:hover{
+	color: #fa5c65;
+}
+li.social a{
+	width: 25px;
+	height: 25px;
+	background-image: url(../img/Social_icons.png);
+	background-repeat: no-repeat;
+	display: inline-block;
+	filter: grayscale(100%);
+}
+li.social a:hover{
+	filter: grayscale(0);
+	transition: all 0.3s ease;
+}
+.tw{
+	color: transparent;
+	background-position: 0 0;
+}
+.fb{
+	color: transparent;
+	background-position: 100% 0;
+}
+.sloganCont{
+	max-width: 58%;
+}
+.sloganCont h1{
+	font-family: 'Montserrat', sans-serif;
+	font-size: 48px;
+	font-weight: 700;
+	margin: 0;
+	color: #314a5b;
+	text-transform: uppercase;
+}
+.sloganCont h4{
+	margin: 20px 0 35px 0;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 20px;
+	font-weight: 400;
+	color: #314a5b;
+	text-transform: uppercase;
+}
+.btn{
+	margin-top: 15px;
+	background-color: #fa5c65;
+	color: #fff;
+	padding: 25px 35px;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 15px;
+	font-weight: 700;
+	border-radius: 7px;
+	border: none;
+	cursor: pointer;
+	text-transform: uppercase;
+}
+.btn:hover{
+	background-color: #c2464d;
+	transition: all 0.3s ease;
+}
+#snippets{
+	position: relative;
+}
+#snippets .wr ul{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	margin: 80px 0;
+	align-items: center;
+	list-style: none;
+	padding: 0;
+}
+#snippets .wr ul li{
+	width: calc(100%/3);
+	box-sizing: border-box;
+	padding-right: 55px;
+}
+#snippets .wr ul li h3{
+	margin-bottom: 25px;
+	color: #465065;
+	font-family:'Montserrat', sans-serif;
+	font-size: 26px;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+.descr{
+	color: #9aa0ab;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 15px;
+	font-weight: 400;
+}
+.more{
+	margin-top: 30px;
+	display: inline-block;
+	text-decoration: none;
+	color: #fa5c65;
+	font-family: 'Montserrat', sans-serif; 
+	font-size: 14px;
+	font-weight: 400;
+	text-transform: uppercase;
+}
+.more:hover{
+	text-decoration: underline;
+	transition: all 0.3s ease;
+}
+.more:after{
+	content: '➔';
+}
+#portfolio{
+	position: relative;
+}
+#portfolio .wr{
+	justify-content: space-between;
+}
+.col{
+	width: 49%;
+}
+.col img{
+	max-width: 100%;
+}
+.col h2{
+	color: #314a5b;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 40px;
+	font-weight: 700;
+	text-transform: uppercase;
+	margin: 0;
+	margin-bottom: 20px;
+}
+.col h4{
+	color: #314a5b;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	margin-bottom: 17px;
+}
+.col .descr{
+	margin: 17px 0;
+}
+#team .wr{
+	display: block;
+}
+.row{
+	height: 100%;
+}
+.row-name h2{
+	color: #314a5b;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 32px;
+	font-weight: 700;
+	text-transform: uppercase;
+	margin: 0;
+}
+.row-name h3{
+	color: #9aa0ab;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	margin: 15px 0 0;
+
+}
+.row-team{
+	margin-top: 30px;
+}
+.row-team ul{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-between;
+	list-style: none;
+	padding: 0 0 20px;
+}
+.row-team ul li {
+	width: calc(100%/3);
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-between;
+}
+.col1{
+	width: 128px;
+	height: 128px;
+	border-radius: 50%;
+	background-repeat: no-repeat;
+	background-position: center;
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+.col2{
+	width: calc(100% - 128px);
+	padding-left: 20px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.col2 h3{
+	color: #314a5b;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 22px;
+	font-weight: 700;
+	text-transform: uppercase;
+	margin: 0;
+}
+.col2 h4{
+	color: #fa5c65;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 14px;
+
+}
+.row-more{
+	text-align: right;
+}
+
+footer{
+	min-height: 90px;
+	max-width: 940px;
+	margin: 0 auto;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-between;
+	border-top: 1px solid #e6eaed;
+	margin-top: 80px;
+	
+
+}
+.col-foot a{
+	display: inline-block;
+	width: 21px;
+	height: 21px;
+	margin-right: 20px;
+	background-image: url(../img/icon.png);
+	background-repeat: no-repeat;
+	background-position: 0 center;
+	opacity: .8;
+}
+.col-foot a:hover{
+	opacity: 1;
+	transition: all 0.3s ease;
+}
+.col-foot .tw{
+	background-position: 0;
+}
+.col-foot .inst{
+	background-position: 38%;
+}
+.col-foot .fb{
+	background-position: 70%;
+}
+.col-foot .gp{
+	background-position: 100%;
+}
+.col-copy{
+	color: #b9c0c6;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 13px;
+	font-weight: 400;
+}
